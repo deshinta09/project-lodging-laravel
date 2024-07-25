@@ -19,7 +19,7 @@ class LodgingFactory extends Factory
     public function definition(): array
     {
         return [
-            'name'=>fake(),
+            'name'=>fake()->word(),
             'description'=>fake()->sentence(10),
             'price'=>fake()->randomDigitNot(0),
             'image'=>fake()->imageUrl(640, 480, 'lodgings', true),
