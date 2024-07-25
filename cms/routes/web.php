@@ -8,5 +8,10 @@ Route::get('/', function () {
 });
 
 Route::get('/lodgings',function(){
-    return view('lodging',['lodgings'=>Lodging::all()]);
+    return view('lodgings',['lodgings'=>Lodging::all()]);
+});
+
+Route::get('/lodgings/{id}', function($id){
+    $lodging = Lodging::find($id);
+    return view('lodging',['lodging'=>$lodging]);
 });
