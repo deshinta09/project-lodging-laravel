@@ -11,3 +11,11 @@ Route::get('/lodgings/{id}', function($id){
     $lodging = Lodging::find($id);
     return view('lodging',['lodging'=>$lodging]);
 });
+
+Route::get('/login', function(){
+    return view('login');
+});
+
+Route::get('/register', function(){
+    return view('register');
+});
