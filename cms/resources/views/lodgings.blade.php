@@ -8,6 +8,7 @@
     <title>Lodging</title>
 </head>
 <body>
+  <x-navbar></x-navbar>
     <h1 class="text-2xl text-center my-10 font-bold">List Lodgings</h1>
     <div class="container mx-auto flex flex-wrap gap-8 justify-around">
 @foreach ($lodgings as $data)

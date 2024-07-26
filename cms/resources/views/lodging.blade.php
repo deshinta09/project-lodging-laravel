@@ -8,6 +8,7 @@
     <title>Detail Lodging</title>
 </head>
 <body>
+  <x-navbar></x-navbar>
     <h1 class="text-center mt-4 text-xl font-semibold">page detail lodging {{ $lodging['id'] }}</h1>
     <div class="container mt-10">
         <div class="w-screen px-10 grid content-evenly">
