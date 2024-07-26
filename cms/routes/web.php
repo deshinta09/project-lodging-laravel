@@ -3,11 +3,7 @@
 use App\Models\Lodging;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/lodgings',function(){
+Route::get('/',function(){
     return view('lodgings',['lodgings'=>Lodging::all()]);
 });
 

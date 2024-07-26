@@ -11,7 +11,7 @@
   <x-navbar></x-navbar>
     <h1 class="text-center mt-4 text-xl font-semibold">page detail lodging {{ $lodging['id'] }}</h1>
     <div class="container mt-10">
-        <div class="w-screen px-10 grid content-evenly">
+        <div class="w-screen px-10 content-evenly">
           <div class="flex p-5 items-center rounded border border-slate-200 shadow-sm">
             <img
               src={{$lodging['image']}}

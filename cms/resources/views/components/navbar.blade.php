@@ -3,8 +3,8 @@
     <h1 class="text-2xl font-semibold ml-5">Lorem</h1>
       <div class="flex gap-5 text-xl">
             <a
-            href="/lodgings"
-              class="{{ request()->is('lodgings') ? 'py-2 px-3 bg-sky-950 rounded cursor-pointer font-bold' : 'py-2 px-3 hover:bg-sky-950 rounded cursor-pointer font-bold' }}"
+            href="/"
+              class="{{ request()->is('/') ? 'py-2 px-3 bg-sky-950 rounded cursor-pointer font-bold' : 'py-2 px-3 hover:bg-sky-950 rounded cursor-pointer font-bold' }}"
             >
               Home
             </a>
