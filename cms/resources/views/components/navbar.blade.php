@@ -3,19 +3,19 @@
     <h1 class="text-2xl font-semibold ml-5">Lorem</h1>
       <div class="flex gap-5 text-xl">
             <a
-              class="{{ request()->is('/lodgigns') ? 'py-2 px-3 bg-sky-950 rounded cursor-pointer font-bold' : 'py-2 px-3 hover:bg-sky-950 rounded cursor-pointer font-bold' }}"
-              href="/lodgings"
+            href="/lodgings"
+              class="{{ request()->is('lodgings') ? 'py-2 px-3 bg-sky-950 rounded cursor-pointer font-bold' : 'py-2 px-3 hover:bg-sky-950 rounded cursor-pointer font-bold' }}"
             >
               Home
             </a>
             <a
-              class="{{ request()->is('/lodgigns/{id}') ? 'py-2 px-3 bg-sky-950 rounded cursor-pointer font-bold' : 'py-2 px-3 hover:bg-sky-950 rounded cursor-pointer font-bold' }}"
-              {{-- href="/lodgigns/{}" --}}
+            href="/lodgigns/create"
+              class="{{ request()->is('lodgings/create') ? 'py-2 px-3 bg-sky-950 rounded cursor-pointer font-bold' : 'py-2 px-3 hover:bg-sky-950 rounded cursor-pointer font-bold' }}"
             >
               Add Lodging
             </a>
         <a
-          class="{{ request()->is('') ? 'py-2 px-3 bg-sky-950 rounded cursor-pointer font-bold' : 'py-2 px-3 hover:bg-sky-950 rounded cursor-pointer font-bold' }}"
+          class="py-2 px-3 hover:bg-sky-950 rounded cursor-pointer font-bold"
         >
           Log Out
         </a>
